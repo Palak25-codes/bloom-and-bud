@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bloom and Bud | Flower shop in Greater Noida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Fraunces:wght@400;500&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#home" class="brand">Bloom and Bud</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">Menu</button>
+    <nav class="nav">
+      <a href="#bouquets">Bouquets</a>
+      <a href="#occasions">Occasions</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero: banner image is img.png in the same folder -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="note">fresh every morning</p>
+        <h1>Flowers that say it softly</h1>
+        <p>Hand-tied bouquets from our little shop on Lane 10, Greater Noida.</p>
+        <a href="#bouquets" class="btn">See the bouquets</a>
+      </div>
+    </section>
+
+    <!-- Bouquets: prices are sample prices, change them here -->
+    <section class="section" id="bouquets">
+      <h2>Our bouquets</h2>
+      <div class="frames">
+        <figure class="frame">
+          <img src="https://i.pinimg.com/originals/3f/97/2b/3f972bef206276aa6a16299bf6e5a304.png" alt="Bouquet of peach and cream roses">
+          <figcaption>
+            <h3>Something Blue</h3>
+            <p>Peach and cream roses, blue hydrangea and eucalyptus.</p>
+            <span class="price">₹1,799</span>
+          </figcaption>
+        </figure>
+        <figure class="frame">
+          <img src="https://assets.giftalove.com/resources/common/giftimages/largeimage/bouquet-of-valentine-red-roses.jpg" alt="Bouquet of red roses" >
+          <figcaption>
+            <h3>The Dozen Reds</h3>
+            <p>Twelve red roses wrapped with baby's breath.</p>
+            <span class="price">₹1,499</span>
+          </figcaption>
+        </figure>
+        <figure class="frame">
+          <img src="https://images.myglobalflowers.com/0de7f6c0-8e38-48b4-d62a-242bcbc05700/large" alt="Pink roses in a white vase" >
+          <figcaption>
+            <h3>Pink Ribbon Vase</h3>
+            <p>Pink roses and alstroemeria in a ribbon-tied vase.</p>
+            <span class="price">₹1,999</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Occasions: stacked list -->
+    <section class="section blush" id="occasions">
+      <h2>Flowers for every reason</h2>
+      <ul class="occasions">
+        <li>
+          <div>
+            <h3>Weddings</h3>
+            <p>Bridal bouquets and flowers for the day.</p>
+          </div>
+          <img src="https://primary.jwwb.nl/public/i/o/v/temp-qzibepguiptggssjpmyy/wedding-aisle-high.webp" alt="" >
+        </li>
+        <li>
+          <div>
+            <h3>Birthdays</h3>
+            <p>Soft, bright bunches that feel like a hug.</p>
+          </div>
+          <img src="https://i.etsystatic.com/15286045/r/il/4d98a8/8260747801/il_1140xN.8260747801_fict.jpg" alt="" >
+        </li>
+        <li>
+          <div>
+            <h3>Anniversary</h3>
+            <p>Roses for another year together.</p>
+          </div>
+          <img src="https://cheetah.cherishx.com/uploads/1777994143_original.jpg" alt="" >
+        </li>
+        <li>
+          <div>
+            <h3>Just because</h3>
+            <p>No reason needed.</p>
+          </div>
+          <img src="https://tussymussy.co.nz/wp-content/uploads/2025/04/image-2.webp" alt="" >
+        </li>
+      </ul>
+    </section>
+
+    <!-- About: save the shop photo as shop.png in the same folder. Rewrite the text in your own words -->
+    <section class="section about" id="about">
+      <img src="shop.png" alt="Bloom and Bud shop front with flowers outside" class="shop-photo">
+      <div>
+        <p class="note">a little note from us</p>
+        <h2>The shop on Lane 10</h2>
+        <p>We are a small flower shop in Greater Noida. Every bouquet is tied by hand in the shop. Tell us what the day is for and we will help you pick something that fits.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div>
+        <h2>Come say hello</h2>
+        <p>Lane 10, Greater Noida</p>
+        <p>Open every day, 9 am to 8 pm</p>
+        <p>+91 XXXXXXXXXX</p>
+      </div>
+      <form id="contact-form">
+        <label for="name">Your name</label>
+        <input type="text" id="name" required>
+        <label for="message">Your message</label>
+        <textarea id="message" rows="4" required></textarea>
+        <button type="submit" class="btn">Send message</button>
+        <p class="form-msg" id="form-msg"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="brand">Bloom and Bud</span>
+    <span>Lane 10, Greater Noida</span>
+    <span><p class="copyright">&copy; Bloom and Bud. All Rights Reserved.</p></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
